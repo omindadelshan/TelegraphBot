@@ -17,20 +17,24 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm Telegraph Bot
+               text="""<b>Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link.
 
-I can upload photos or videos to telegraph. Made by @ImJanindu 🇱🇰
+ Send me /help for more info.
 
-Hit help button to find out more about how to use me</b>""",   
+A project by @slbotzone 🇱🇰
+
+✅ Join our bots channel and group
+🔰@SL_bot_zone🔰@slbotzone
+</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "✍️Help👨‍💻", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "✅Channel✅", url="https://t.me/slbotzone")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                            "📦Source Code📦", url="https://github.com/supunmadurangasl/TelegraphBot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -43,18 +47,27 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
+😅 It is not complicated!
 
-~ @Infinity_BOTs</b>""",
+🔴 Just send me any photo,video or a gif animation with a file size which is less than 5mb.
+
+🔴 Then wait for me to upload it to telegraph and send you the link.
+
+A project by @supunma 🇱🇰
+
+✅ Join our bots channel and group
+🔰@SL_bot_zone🔰@slbotzone.
+
+~ @supunma</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            " 🔙  Back 🔙", callback_data="start"),
                                         InlineKeyboardButton(
-                                            "About", callback_data="about"),
+                                            " 🌀About 🌀", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                            "📦 Source Code 📦", url="https://github.com/supunmadurangasl/TelegraphBot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -67,19 +80,19 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
+<b>🔥 Developer:</b> <a href="https://t.me/supunma">supun 🇱🇰</a>
 
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+<b>🔥 Support:</b> <a href="https://t.me/slbotzone">slbotzone</a>
 
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+<b>🔥 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~ @Infinity_BOTs</b>""",
+<b>~ @slbotzone</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="help"),
+                                            "🔙  Back 🔙  ", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                            "📦Source Code 📦", url="https://github.com/supunmadurangasl/TelegraphBot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -87,7 +100,7 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text(" 📤 Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -95,7 +108,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @JEBotZ**',
+        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
             disable_web_page_preview=True,
         )
     finally:
@@ -103,7 +116,7 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("📤 Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -111,7 +124,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @JEBotZ**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
             disable_web_page_preview=True,
         )
     finally:
@@ -119,7 +132,7 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("📤 Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -127,7 +140,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @JEBotZ**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @slbotzone**',
             disable_web_page_preview=True,
         )
     finally:
@@ -149,7 +162,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @Infinity_BOTs
+Join @slbotzone
 """
 )
 
