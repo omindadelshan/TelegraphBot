@@ -17,14 +17,15 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link.
+               text="""<b>Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
  Send me /help for more info.
 
 A project by @omindas 🇱🇰
 
 ✅ Join our bots channel and group
-🔰@sdprojectupdates🔰https://t.me/joinchat/2AbFJ4xPVeA4OGQ1
+🔰@sdprojectupdates🔰
+https://t.me/joinchat/2AbFJ4xPVeA4OGQ1
 </b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
@@ -34,7 +35,7 @@ A project by @omindas 🇱🇰
                                             "✅Channel✅", url="https://t.me/sdprojectupdates")
                                     ],[
                                       InlineKeyboardButton(
-                                            "📦Source Code📦", url="https://github.com/omindadelshan/TelegraphBot")
+                                            "🔥 Developer 🔥", url="https://t.me/omindas")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -100,7 +101,7 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text(" 📤 Uploading To Telegraph...")
+    msg = await message.reply_text(" 📤 Uploading To Telegraph📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -116,7 +117,7 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph...")
+    msg = await message.reply_text("📤 Uploading To Telegraph📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -132,7 +133,7 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph...")
+    msg = await message.reply_text("📤 Uploading To Telegraph📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
