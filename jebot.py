@@ -17,15 +17,15 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
+               text="""<b>😋Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
- Send me /help for more info.
+ Send me /help Command for more info...🔥🔥
 
-A project by @omindas 🇱🇰
+𝙰 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 @omindas 🇱🇰 🌟 𝚙𝚘𝚠𝚎𝚛𝚍 𝚋𝚢 @sdrojectupdates
 
-✅ Join our bots channel and group
-🔰@sdprojectupdates🔰
-https://t.me/joinchat/2AbFJ4xPVeA4OGQ1
+✅ ***Join our bots channel and group***
+😋 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐚𝐥 : 🔰@sdprojectupdates🔰
+🔥 𝐔𝐩𝐝𝐚𝐭𝐞 𝐆𝐫𝐨𝐮𝐩 : https://t.me/joinchat/2AbFJ4xPVeA4OGQ1
 </b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
@@ -46,7 +46,7 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Telegraph Bot Help!
+               text="""<b>🌟Welcome to Telegraph Bot Help!
 
 😅 It is not complicated!
 
@@ -65,10 +65,10 @@ A project by @omindas 🇱🇰
                                         InlineKeyboardButton(
                                             " 🔙  Back 🔙", callback_data="start"),
                                         InlineKeyboardButton(
-                                            " 🌀About 🌀", callback_data="about"),
+                                            " ✳️About✳️", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "📦 Source Code 📦", url="https://github.com/omindadelshan/TelegraphBot")
+                                            "🇱🇰Source Code🇱🇰", url="https://github.com/omindadelshan/TelegraphBot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -81,11 +81,11 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>🔥 Developer:</b> <a href="https://t.me/omindas">Ominda 🇱🇰</a>
+<b>🔥 Developer 🔥:</b> <a href="https://t.me/omindas">Ominda 🇱🇰</a>
 
-<b>🔥 Support:</b> <a href="https://t.me/https://t.me/joinchat/2AbFJ4xPVeA4OGQ1">SD Bot world</a>
+<b>🔥 Support 🔥:</b> <a href="https://t.me/https://t.me/joinchat/2AbFJ4xPVeA4OGQ1">SD Bot world</a>
 
-<b>🔥 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+<b>🔥 Library 🔥:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 <b>~ @omindas</b>""",
      reply_markup=InlineKeyboardMarkup(
@@ -101,7 +101,7 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text(" 📤 Uploading To Telegraph📤")
+    msg = await message.reply_text(" 📤 Uploading To Telegraph ominda 📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -109,7 +109,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**📤Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
+        await msg.edit_text(f'**📤Uploaded To Telegraph📤!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
             disable_web_page_preview=True,
         )
     finally:
@@ -117,7 +117,7 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph📤")
+    msg = await message.reply_text("📤 Uploading To Telegraph ominda📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -125,7 +125,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph📤!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
             disable_web_page_preview=True,
         )
     finally:
@@ -133,7 +133,7 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("📤 Uploading To Telegraph📤")
+    msg = await message.reply_text("📤 Uploading To Telegraph ominda📤")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -141,7 +141,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**📤 Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
+        await msg.edit_text(f'**📤 Uploaded To Telegraph📤!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @omindas**',
             disable_web_page_preview=True,
         )
     finally:
