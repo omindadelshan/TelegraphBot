@@ -19,9 +19,9 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>😋Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
- Send me /help Command for more info...🔥🔥
+ Send me /help Command for more info...🔥🔥 🤡🤡My maker Info see a send /help command 👨‍💻👨‍💻🤓
 
-𝙰 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 @omindas 🇱🇰 🌟 𝚙𝚘𝚠𝚎𝚛𝚍 𝚋𝚢 @sdrojectupdates
+𝙰 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 @omindas 🇱🇰 🌟 𝚙𝚘𝚠𝚎𝚛𝚍 𝚋𝚢 @sdrojectupdates  👨‍💻 See a my ifo send a /about Command⚡⚡⚡👨‍💻 
 
 ✅ ***Join our bots channel and group***
 😋 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐚𝐥 : 🔰@sdprojectupdates🔰
@@ -46,13 +46,13 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>🌟Welcome to Telegraph Bot Help!
+               text="""<b>🌟Welcome to Telegraph Bot Help Room👨‍💻!
 
 😅 It is not complicated!
 
-🔴 Just send me any photo,video or a gif animation with a file size which is less than 5mb.
+🔴🤓 Just send me any photo,video or a gif animation with a file size which is less than 5mb.
 
-🔴 Then wait for me to upload it to telegraph and send you the link.
+🔴🤓 Then wait for me to upload it to telegraph and send you the link.
 
 A project by @omindas 🇱🇰
 
