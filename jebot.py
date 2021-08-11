@@ -19,13 +19,13 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>😋Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
- Send me /help Command for more info...🔥🔥 🤡🤡My maker Info see a send /help command 👨‍💻👨‍💻🤓
+ 🥶Send me👉 /help 👈Command for more info...🔥🔥 🤡🤡My maker Info see a send /help command 👨‍💻👨‍💻🤓 And 👹 Read A My About Send A👉 /about 👈command 🎈🎈
 
 𝙰 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 @omindas 🇱🇰 🌟 𝚙𝚘𝚠𝚎𝚛𝚍 𝚋𝚢 @sdrojectupdates  👨‍💻 See a my ifo send a /about Command⚡⚡⚡👨‍💻 
 
-✅ ***Join our bots channel and group***
-😋 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐚𝐥 : 🔰@sdprojectupdates🔰
-🔥 𝐔𝐩𝐝𝐚𝐭𝐞 𝐆𝐫𝐨𝐮𝐩 : https://t.me/joinchat/2AbFJ4xPVeA4OGQ1
+✅ Join our bots channel and group 🎈✳️
+😋 Update Channal : 🔰@sdprojectupdates🔰
+🔥 Update Group : https://t.me/sdprojectbots
 </b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
@@ -35,7 +35,7 @@ async def start(client, message):
                                             "✅Channel✅", url="https://t.me/sdprojectupdates")
                                     ],[
                                       InlineKeyboardButton(
-                                            "🔥 Developer 🔥", url="https://t.me/omindas")
+                                            "🥶 Developer🥶", url="https://t.me/omindas")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -57,7 +57,7 @@ async def help(client, message):
 A project by @omindas 🇱🇰
 
 ✅ Join our bots channel and group
-🔰@sdprojectupdates🔰@https://t.me/joinchat/2AbFJ4xPVeA4OGQ1.
+🔰@sdprojectupdate 💥  .https://t.me/sdprojectbots
 
 ~ @omindas</b>""",
         reply_markup=InlineKeyboardMarkup(
