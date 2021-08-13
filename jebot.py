@@ -16,6 +16,7 @@ Jebot = Client(
 async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
+       await Jebot.send_sticker("CAACAgUAAx0CSNPoMAACBj1hFj-okNDTu0yaV5NFHWZQkZZgFQACTwADO0qzKaWcJX-Qpt8_IAQ")
                chat_id=message.chat.id,
                text="""<b>😋Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
