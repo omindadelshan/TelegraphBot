@@ -16,11 +16,10 @@ Jebot = Client(
 async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
-       await Jebot.send_sticker("CAACAgUAAx0CSNPoMAACBj1hFj-okNDTu0yaV5NFHWZQkZZgFQACTwADO0qzKaWcJX-Qpt8_IAQ")
                chat_id=message.chat.id,
                text="""<b>😋Hello 👋 there! I can upload photos,videos & gif animations to telegraph and provide you the link. 🇱🇰i am powerfull.
 
- 🥶Send me👉 /help 👈Command for more info...🔥🔥 🤡🤡My maker Info see a send /help command 👨‍💻👨‍💻🤓 And 👹 Read A My About Send A👉 /about 👈command 🎈🎈
+Send me👉 /help 👈Command for more info.... 😇Read A My About Send A👉 /about 👈command 🎈🎈
 
 𝙰 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 @omindas 🇱🇰 🌟 𝚙𝚘𝚠𝚎𝚛𝚍 𝚋𝚢 @sdrojectupdates  👨‍💻 See a my ifo send a /about Command⚡⚡⚡👨‍💻 
 
@@ -36,7 +35,7 @@ async def start(client, message):
                                             "✅Channel✅", url="https://t.me/sdprojectupdates")
                                     ],[
                                       InlineKeyboardButton(
-                                            "🥶 Developer🥶", url="https://t.me/omindas")
+                                            "🥶Developer - ominda🥶", url="https://t.me/omindas")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
